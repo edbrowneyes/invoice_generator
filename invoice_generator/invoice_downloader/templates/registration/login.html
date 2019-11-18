@@ -2,10 +2,10 @@
 <body>
     <h1>Login</h1>
     {% if form.errors %}
-    <p>There's something wrong with what you entered!</p>
+    <p>El formulario tiene un error</p>
     {% endif %}
     {% if next %}
-    <p>Hey, you can't access that page-</p>
+    <p>Hey, no puedes acceder a esa página</p>
     {% endif %}
     <form action="{% url 'login' %}" method="post">
         {% csrf_token %}
